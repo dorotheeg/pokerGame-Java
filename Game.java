@@ -1,17 +1,3 @@
-/* dcg2150
- * 
- * COMS 1004 
- * Project P7.9
- * Adam Cannon
- * 
- * @author Dorothee Grant
- * 
- * Poker Game due April 2
- * 
- * The Game Class runs the game and chooses
- * how the game is played
- * */
-
 import java.util.*; //import all
 
 public class Game { //make the Game Class
