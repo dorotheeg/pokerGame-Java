@@ -1,16 +1,3 @@
-/* dcg2150
- * 
- * COMS 1004 
- * Project P7.9
- * Adam Cannon
- * 
- * @author Dorothee Grant
- * 
- * Poker Game due April 2
- * 
- * created and shuffles the cards into a Deck
- * */
-
 import java.util.Random; //import the random class for shuffling
 
 public class Deck {
