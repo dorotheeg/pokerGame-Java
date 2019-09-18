@@ -1,0 +1,64 @@
+import java.util.*;
+
+public class Player {
+    
+	private ArrayList<Card> hand; // the player's cards 
+	private double bankroll;
+    private double bet;
+	//instance variables
+		
+	public Player(){	
+        hand = new ArrayList<Card>();
+        bankroll = 100;
+        bet = 0; 
+    }
+
+    public void addCard(Card c){ 
+           hand.add(c);
+	    // add the card c to the player's hand
+	}
+   
+    public ArrayList<Card> getHand(){ 
+        //made this method to return the hand to make
+        //the checks in the Game class easier
+        return hand;
+    }
+    public void sortHand(){ 
+        //made this methos to sort my hand in the regualr way of playing
+        //no parameters in ()
+        Collections.sort(hand);
+    }
+    
+     public void sort(ArrayList<Card> hand){
+         //made this methos to sort my hand in the command line arguemts
+         //this one takes an explicit parameter
+        Collections.sort(hand);
+    }
+	public void removeCard(int c){ //changed to int
+        //changes this explicit param from the Card c to int c beacause
+        //I am asking the user for the location of their card to remove
+        //Then remove the card at the given index
+            hand.remove(c);
+        }
+
+        public void bets(double amt){ 
+            // player makes a bet
+            // then adjust bankroll
+            bet = amt;
+            bankroll = bankroll - amt;
+        }
+
+        public void winnings(double odds){
+            bankroll += bet * odds;
+            //	adjust bankroll if player wins
+        }
+
+        public double getBankroll(){
+            return bankroll;
+            // return current balance of bankroll
+        }
+    
+}
+
+
+
